@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Earnify Hub - Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="toggle-btn" id="toggle-btn">&#9776;</div>
+    <div class="navbar-left">
+      <h2>Earnify Hub</h2>
+    </div>
+    <div class="navbar-right">
+      <span class="welcome-msg">Welcome, <span id="user-name">User</span></span>
+      <div class="profile-pic-container">
+        <img src="default-profile.png" alt="Profile Picture" id="profile-pic">
+        <input type="file" id="upload-pic" accept="image/*">
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <ul>
+      <li><a href="#affiliate">WhatsApp Affiliate Marketing with Purchase Commissions</a></li>
+      <li><a href="#digital">Digital Marketing</a></li>
+      <li><a href="#forex">Forex Trading</a></li>
+      <li><a href="#ecommerce">E-commerce & Drop Shipping</a></li>
+      <li><a href="#writing">Content Writing & Copywriting</a></li>
+      <li><a href="#affiliate-marketing">Affiliate Marketing</a></li>
+      <li><a href="#graphic">Graphic Design</a></li>
+      <li><a href="#webdev">Web Development & Design</a></li>
+      <li><a href="#virtual">Virtual Assistance</a></li>
+      <li><a href="#advertising">Online Advertising & Monetization</a></li>
+      <li><a href="#freelancing">Freelancing Mastery</a></li>
+    </ul>
+    <div class="deposit">
+      <a href="#deposit">Deposit</a>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content" id="main-content">
+    <!-- Company Vision, Mission, Motto -->
+    <section class="intro">
+      <h2>Our Vision</h2>
+      <p>Empowering individuals worldwide to achieve financial independence and personal growth through accessible online opportunities and education.</p>
+      <h2>Our Mission</h2>
+      <p>At Earnify Hub, our mission is to provide a comprehensive online ecosystem that offers diverse earning opportunities, high-quality educational resources, and a supportive community. We empower our members to develop new skills, access lucrative job markets, and build sustainable income streams from the comfort of their homes.</p>
+      <h2>Motto</h2>
+      <p>"Earn, Learn, Thrive"</p>
+    </section>
+
+    <!-- Affiliate Marketing Section -->
+    <section id="affiliate" class="content-section">
+      <h3>WhatsApp Affiliate Marketing with Purchase Commissions</h3>
+      <div class="cards-container">
+        <div class="card">
+          <img src="affiliate.jpg" alt="Affiliate Marketing">
+          <h4>Affiliate Marketing</h4>
+          <p>Promote products and earn commissions from sales through your unique links.</p>
+          <a href="#">Learn More</a>
+        </div>
+        <!-- Add more cards as needed -->
+      </div>
+    </section>
+
+    <!-- Repeat similar sections for other topics -->
+
+    <!-- Deposit Section -->
+    <section id="deposit" class="deposit-section">
+      <h3>Deposit</h3>
+      <button id="pay-now-btn" class="btn">Pay Now</button>
+      <div id="payment-details" class="hidden">
+        <p>Please pay KES 1000 to the following M-Pesa account:</p>
+        <p><strong>Business Name:</strong> Earnify Hub</p>
+        <p><strong>Account Number:</strong> 123456789</p>
+        <button id="verify-btn" class="btn">Verify</button>
+      </div>
+      <div id="verification-form" class="hidden">
+        <input type="text" id="m-pesa-code" placeholder="Enter M-Pesa Code" required>
+        <button id="submit-verify" class="btn">Verify</button>
+      </div>
+    </section>
+
+    <!-- Submit Form for Uploading Pictures -->
+    <section class="submit-section">
+      <h3>Submit Your Product</h3>
+      <form id="submit-form">
+        <input type="file" id="product-image" accept="image/*" required>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+      <p id="submit-status" class="status-msg"></p>
+    </section>
+
+    <!-- My Earnings -->
+    <section class="earnings-section">
+      <h3>My Earnings</h3>
+      <p>Total Views: <span id="total-views">0</span></p>
+      <p>Total Earnings: KES <span id="total-earnings">0</span></p>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 Earnify Hub. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+
+  <!-- Modal Structure -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2>Service Title</h2>
+    <p>Detailed information about the service.</p>
+    <a href="#" class="btn">Read Articles</a>
+  </div>
+</div>
+</body>
+</html>

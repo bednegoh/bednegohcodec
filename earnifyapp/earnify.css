@@ -1,0 +1,229 @@
+body {
+    background-color: aliceblue;
+    top: 0;
+    width: 100%;
+    margin: 0;
+   
+}
+
+
+.navgen {
+    background-color: #001f3f;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    
+}
+
+.navgen h2 {
+    color: #00bfff;
+    display: flex;
+    margin: 0;
+}
+
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #001f3f; 
+    padding-top: 30px;
+    transform: translateX(-100%); 
+    transition: transform 0.3s ease;
+    
+}
+
+.sidebar a {
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: color 0.3s;
+}
+
+.sidebar a:hover {
+    color: #00bfff;
+}
+
+#sidebar-toggle:checked ~ .sidebar {
+    transform: translateX(0);
+}
+
+.toggle-label {
+    font-size: 25px; 
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+.toggle-label:hover {color: #ff6600;}
+
+@media screen and (max-width: 768px) {
+    
+
+    .sidebar {
+        width: 200px;
+    }
+
+    .sidebar a {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+ .content {
+    background-color: #464646;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+    padding-bottom: 0;
+    
+ }
+
+ .buttons {
+    background-color: #00bfff;
+    padding: 10px 40px;
+    border-radius: 10px;
+    color: white;
+    margin-left: 30px;
+    cursor: pointer;
+
+    
+ }
+
+ .packages {
+    display: flex;
+    flex-direction: row;
+    background-color: #464646;
+    padding: 70px;
+    justify-content: center;
+
+ }
+
+ .plan {
+    border-radius: 16px;
+    box-shadow: 0 30px 30px -25px rgba(0, 38, 255, 0.205);
+    padding: 10px;
+    background-color:  #00bfff;
+    max-width: 300px;
+    display: flex;
+    height: 400px;
+   
+  }
+  
+
+  
+  .plan .inner {
+    align-items: center;
+    padding: 20px;
+    padding-top: 40px;
+    background-color: #001f3f;
+    border-radius: 12px;
+    position: relative;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .plan .pricing {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #a3b9da;
+    border-radius: 99em 0 0 99em;
+    display: flex;
+    align-items: center;
+    padding: 0.625em 0.75em;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #425475;
+  }
+  
+  .plan .pricing small {
+    color: white;
+    font-size: 0.75em;
+    margin-left: 0.25em;
+  }
+  
+  .plan .title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #00bfff;
+  }
+  
+  .plan .title + * {
+    margin-top: 0.75rem;
+  }
+  
+  .plan .info + * {
+    margin-top: 1rem;
+  }
+  
+  .plan .features {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .plan .features li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .plan .features li + * {
+    margin-top: 0.75rem;
+  }
+  
+  .plan .features .icon {
+    background-color: #1FCAC5;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .plan .features .icon svg {
+    width: 14px;
+    height: 14px;
+  }
+  
+  .plan .features + * {
+    margin-top: 1.25rem;
+  }
+  
+  .plan .action {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  
+  .plan .button {
+    background-color: #00aeff;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.125rem;
+    text-align: center;
+    border: 0;
+    outline: 0;
+    width: 100%;
+    padding: 0.625em 0.75em;
+    text-decoration: none;
+  }
+  
+  .plan .button:hover, .plan .button:focus {
+    background-color: #1FCAC5;
+  }
+
